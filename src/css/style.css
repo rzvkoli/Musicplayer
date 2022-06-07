@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif ;
+}
+
+body{
+    height: 100%;
+    background-color: #0470dc;
+    overflow-x: hidden;
+}
+
+nav{
+    border-bottom: solid 50px rgba(0,0,0,0.8);
+}
+
+h1{
+    color: #01509e;
+    font-weight: bold;
+    position: relative;
+    left: 7px;
+}
+
+a{
+    color: #000;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+a:hover{
+    color: #0080ff;
+}
+
+a:focus{
+    color: #01509e;
+}
+
+.disabled{
+    pointer-events: none;
+    text-decoration: none;
+    color: #777;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: 7em;
+}
+
+.bi-play-fill{
+    color: #01509e;
+    visibility: hidden;
+    font-size: 5em;
+    position: relative;
+    top: -3em;
+    left: 0.75em;
+}
+
+.music{
+    transition: all .5s ease;
+    padding: 10px;
+}
+
+.music:hover{
+    transform: translateY(-15px);
+}
+
+.music:hover i{
+    visibility: visible;
+}
+
+p , h3{
+    color: #fff;
+    margin-top: 10px;
+    
+}
+
+.btn-primary{
+    border: hidden;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #0080ff;
+    padding: 5px 10px;
+}
+
+.sub:hover{
+    background-color: #0470dc;
+}
+
+h2{
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: -1.45em;
+}
+
+b{
+    font-weight: bolder;
+    color: #0080ff;
+}
+
+.connections{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    position: relative;
+    top: 4.5em;
+    left: -9px;
+
+}
+
+#connections1 , #connections2 , #connections3{
+    color: #000;
+}
+
+.en{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 0.85em;
+    font-weight: bold;
+    position: relative;
+    top: 7.5em;
+    left: 7px;
+}
+
+.en:hover{
+    color: #000;
+}
+
+@media only screen and (max-width:447px){
+    nav{
+        border-bottom: solid 80px rgba(0,0,0,0.8);
+    }
+    
+    h2{
+        color: aliceblue;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        top: -2.75em;
+    }
+
+    b{
+        font-weight: bolder;
+        color: #0080ff;
+    }
+}
+
+@media only screen and (max-width:426px){
+    h1{
+        position: relative;
+        left: 14px;
+    }
+}
+
+@media only screen and (max-width:321px){
+    h1{
+        position: relative;
+        left: 16px;
+    }
+}
